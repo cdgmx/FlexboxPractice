@@ -1,0 +1,96 @@
+
+body {
+    height: 100%;
+    background-color: green; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*this is made because there is a problem in body having a padding creating scroll */
+
+/* can be transfered to body later because this is redundant */
+.main-body{ 
+    
+    
+    display: flex;
+    height: calc(100vh);
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+
+
+    /* This is to make padding added to the viewport size */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    
+    flex-direction: column;
+    border: 2px solid white;
+    
+
+}
+
+.flexbox{
+    margin: 20px;
+}
+
+.row-flex-cont{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+    flex-direction: row;
+}
+
+.col-flex-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+
+
+.col-flex-cont .boxone{
+    background-color: blue;
+    flex-grow: 2;
+    margin-bottom: 10px;
+    
+}
+
+.col-flex-cont .boxtwo{
+    background-color: green;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    
+}
+
+.col-flex-cont .boxthree{
+    
+    flex-grow: 6;
+    flex-direction: column;
+    
+   
+}
+
+.row-flex-cont .bthree-1{
+    background-color: orange;
+    flex-grow: 2;
+    margin-right: 15px;
+  
+    
+    
+}
+
+.row-flex-cont .bthree-2{
+    background-color: red;
+    flex-grow: 1;
+    margin-left: 15px;
+    
+}
